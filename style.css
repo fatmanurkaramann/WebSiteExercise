@@ -15,13 +15,15 @@ body {
   padding: 100px;
   display: block;
   height: 100px;
+  overflow: hidden;
+
 }
 .playIcon {
-  display: inline-block;
+  display: block;
   position: relative;
   width: 100%;
-  padding: 30px;
-  top: 50%;
+  overflow: hidden;
+
 }
 .playIcon i {
   text-align: center;
@@ -30,26 +32,27 @@ body {
   background-color: #ffc300;
   border-radius: 50%;
   padding: 10px;
+
 }
 .header i {
   padding: 10px;
   float: right;
   margin-bottom: 40px;
   position: relative;
-  top: -190px;
+  top: -245px;
   right: -40px;
   margin: auto;
   color: white;
+  cursor: pointer;
 }
 .headerText {
   width: 55%;
   text-align: center;
   font-size: 20px;
   position: relative;
-  left:24%;
+  left: 24%;
   bottom: 50%;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 .card {
   position: relative;
@@ -60,12 +63,11 @@ body {
   margin: auto;
   padding: 20px;
 }
-@media  screen and (min-width: 0px) and (max-width: 838px) {
-  .card{ width:100%;}
-  } 
-  @media  screen and (min-width: 0px) and (max-width: 675px) {
-    .card{ width:100%;}
-    } 
+@media screen and (min-width: 150px) and (max-width: 838px) {
+  .card {
+    width: 100%;
+  }
+}
 
 /* On mouse-over, add a deeper shadow */
 .cards:hover {
@@ -163,15 +165,15 @@ footer {
   min-height: 30vh;
   margin: auto;
   display: grid;
-  position: static;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto ;
   grid-template-rows: 50% 50%;
 }
 .blogContainer > div {
   background-color: #ffc300;
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
   height: 30vh;
+
 }
 .buttonDesign {
   border-width: 3px;
@@ -222,3 +224,18 @@ hr {
   margin-top: 50px;
   cursor: pointer;
 }
+ul li {
+  list-style-type:none;
+}
+.open {
+  width:20px;
+  height:20px;
+  background-color:red;
+  color:#fff;
+  display:block;
+  cursor:pointer;
+  text-align:center;
+ }
+ .sub-menu {
+  display:none;
+ }
